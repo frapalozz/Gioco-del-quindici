@@ -1,0 +1,42 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: gray;
+    width: fit-content;
+    border: solid rgb(214, 119, 56) 10px;
+    position: relative;
+    gap: 5px;
+    padding: 5px;
+}
+
+.blocco {
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: solid rgb(0, 0, 0) 1px;
+    box-shadow: black 3px 3px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 25px;
+}
