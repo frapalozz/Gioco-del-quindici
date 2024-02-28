@@ -1,4 +1,3 @@
-let base = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 let base2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let griglia = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 griglia = shuffle(griglia);
@@ -61,6 +60,8 @@ function grigliaFinale(list, elementi, fin) {
     return matrix;
 }
 
+let row = 3;
+let col = 3;
 
 function muovi(e) {
     if(!finito) {
@@ -109,6 +110,7 @@ function muovi(e) {
         if( riga-1 != -1 && array[riga-1][colonna] == 16) {
             console.log(1);
             mosse++;
+            row++;
 
             document.getElementById(posizione).append(blocco1);
             document.getElementById(position).append(blocco2); 
@@ -129,6 +131,7 @@ function muovi(e) {
         else if(riga+1 != 4 && array[riga+1][colonna] == 16) {
             console.log(2);
             mosse++;
+            row--;
 
             document.getElementById(posizione).append(blocco1);
             document.getElementById(position).append(blocco2);
@@ -149,6 +152,7 @@ function muovi(e) {
         else if(colonna-1 != -1 && array[riga][colonna-1] == 16) {
             console.log(3);
             mosse++;
+            col++;
 
             document.getElementById(posizione).append(blocco1);
             document.getElementById(position).append(blocco2); 
@@ -169,6 +173,7 @@ function muovi(e) {
         else if(colonna+1 != 4 && array[riga][colonna+1] == 16) {
             console.log(4);
             mosse++;
+            col--;
             
             document.getElementById(posizione).append(blocco1);
             document.getElementById(position).append(blocco2); 
