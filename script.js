@@ -33,6 +33,7 @@ function creaGriglia(array) {
         };
         blocco.innerHTML += griglia[i]; 
         blocco.className = "blocco";
+        preventLongPressMenu(blocco);
 
         document.getElementById(`${i+1}`).appendChild(blocco);
     }
@@ -218,6 +219,14 @@ function checkWin() {
     }
 }
 
+function preventLongPressMenu(nodes) {
+    for(var i=0; i<nodes.length; i++){
+       nodes[i].ontouchstart = absorbEvent_;
+       nodes[i].ontouchmove = absorbEvent_;
+       nodes[i].ontouchend = absorbEvent_;
+       nodes[i].ontouchcancel = absorbEvent_;
+    }
+}
 
 
 
