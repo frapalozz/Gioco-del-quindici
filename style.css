@@ -1,7 +1,7 @@
 *, body {
     margin: 0;
     padding: 0;
-    
+    touch-action: manipulation;
 }
 
 body {
@@ -25,9 +25,11 @@ body {
     position: relative;
     gap: 5px;
     padding: 5px;
+    touch-action: manipulation;
 }
 
 .blocco {
+    touch-action: manipulation;
     background-color: gray;
     color: white;
     font-size: 30px;
@@ -41,11 +43,12 @@ body {
     cursor: pointer;
 }
 
-h1, h2 {
+h1 {
     font-family: monospace;
     font-size: 25px;
 }
 
 h2 {
+    font-family: monospace;
     font-size: 15px;
 }
