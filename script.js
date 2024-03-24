@@ -195,6 +195,11 @@ function muovi(e) {
     
 }
 
+creaGriglia(griglia);
+griglia2 = grigliaFinale(griglia, 4, 0);
+
+let grz = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0]];
+
 function checkWin() {
     if(mosse > 0) {
         document.getElementById('primaMossa').style.display = 'none';
@@ -226,10 +231,3 @@ function checkWin() {
     }
 }
 
-
-
-
-creaGriglia(griglia);
-griglia2 = grigliaFinale(griglia, 4, 0);
-
-let grz = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0]];
