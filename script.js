@@ -196,6 +196,9 @@ function muovi(e) {
 }
 
 function checkWin() {
+    if(mosse > 0) {
+        document.getElementById('primaMossa').style.display = 'none';
+    }
     let x = 0;
     for(let i = 0; i < griglia2.length; i++) {
 

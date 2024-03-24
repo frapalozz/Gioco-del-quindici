@@ -41,7 +41,11 @@ body {
     cursor: pointer;
 }
 
-h1 {
+h1, h2 {
     font-family: monospace;
     font-size: 25px;
+}
+
+h2 {
+    font-size: 15px;
 }
